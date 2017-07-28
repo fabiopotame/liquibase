@@ -1,0 +1,12 @@
+#!/bin/bash
+./liquibase --changeLogFile=changelog/changelog.xml \
+--username=cpd \
+--password= \
+--url=jdbc:mysql://10.10.1.240 \
+--driver=com.mysql.jdbc.Driver \
+--defaultSchemaName=liquibase \
+--classpath=src/mysql-connector-java-5.1.13.jar \
+--driver=com.mysql.jdbc.Driver \
+ ${1} \
+ ${2}
+

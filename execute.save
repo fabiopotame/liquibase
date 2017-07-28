@@ -1,0 +1,11 @@
+#!/bin/bash
+./liquibase --changeLogFile=changelog/changelog.xml --username=cpd --password= --url=10.10.1.240 
+ --driver=<jdbc.driver.ClassName>           Database driver class name
+ --databaseClass=<database.ClassName>       custom liquibase.database.Database
+                                            implementation to use
+ --propertyProviderClass=<properties.ClassName>  custom Properties
+                                            implementation to use
+com.mysql.jdbc.Driver --defaultSchemaName=<name>                 Default database schema to use
+
+${1}
+
