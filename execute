@@ -1,8 +1,8 @@
 #!/bin/bash
 ./liquibase --changeLogFile=changelog/changelog.xml \
---username=cpd \
---password= \
---url=jdbc:mysql://10.10.1.240 \
+--username="usuario" \
+--password="senha" \
+--url=jdbc:mysql://"endereco do banco de dados" \
 --driver=com.mysql.jdbc.Driver \
 --defaultSchemaName=liquibase \
 --classpath=src/mysql-connector-java-5.1.13.jar \
